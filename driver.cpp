@@ -1,0 +1,63 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+//#include <sstream>
+
+#define MIN_ARGS 2
+
+int driver(int argc, char const *argv[]){
+    std::ifstream fin;
+    int numOfFiles;
+
+    //check for correct usage / make sure there are files to be opened
+    if (argc < MIN_ARGS) {
+        std::cout << "Correct usage:" << std::endl;
+        std::cout << argv[0] << " filename (as many files as you want)" << std::endl;
+        return 0;
+    }
+
+//read in each file one at a time
+    //open file and check for opening
+    numOfFiles = *argv.size(); ///////////////////////////////////////// how to get # of arguments
+    for(int i=1; i<numOfFiles; i++){
+        fin.open(argv[i]);
+        if((fin.is_open()) == false){
+            std::cout << "File " << argv[i] << "could not be opened" << std::endl;
+            //could throw an exception here? that way we can continue to work with the files that *could* be opened
+        }
+    }
+
+
+//object holding the information should be added to an appropriate data structure
+
+
+do{
+//the user can choose to modify the metadata of any file
+
+//The user may choose to process a file by choosing one or more processors
+    //Processors should be applied in sequence
+    //The provided processors should include normalization, noise gating, and echo
+
+//After processing, the user should be prompted for a file name and if valid, 
+    //a new file is created with the processed audio
+    //The user is not allowed to save the file under the same name as any of the existing files
+
+//If the user chooses to do so, a CSV file can be exported
+
+}while(); //while the user does not choose to exit
+
+
+//When the modification is complete, the file must be saved with the new metadata
+//The modifications should override any current metadata, or create the metadata if it didn’t exist previously
+
+
+
+//sound file data (sound buffer, etc) should be deleted from the heap (NOT DISK!)
+
+    //close audio files
+    for(int i=1; i<numOfFiles; i++){
+        fin.close();
+    }
+    return 0;
+}
