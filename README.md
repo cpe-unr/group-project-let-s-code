@@ -1,12 +1,27 @@
 # CS 202 Semester Project Template
 
+NOTES
+*create LOTS of functions
+
+UML: name, attributes, function names w/ return type
+
 Assignments:
+All 
+- driver (add sudo code and put in you own calls with MANY comments)
+- makefile, update when you create your classes
+
 Paige
+- WAV files (read in)
+- audio processors
+- UML diagram
 
 Annie
+- CSV file (generation)
+- if the user choses to change the metadata
 
 Tanner
-
+- user interactions 
+- documentation w/ doxygen (paige will give UML diagram)
 --------------------------------------------------------------------------------------------------------------
 Ideas:
 - class for the wav files (reading in and such)

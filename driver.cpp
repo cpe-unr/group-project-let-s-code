@@ -19,7 +19,7 @@ int driver(int argc, char const *argv[]){
 
 //read in each file one at a time
     //open file and check for opening
-    numOfFiles = *argv.size(); ///////////////////////////////////////// how to get # of arguments
+    numOfFiles = argc-1; 
     for(int i=1; i<numOfFiles; i++){
         fin.open(argv[i]);
         if((fin.is_open()) == false){
@@ -31,7 +31,7 @@ int driver(int argc, char const *argv[]){
 
 //object holding the information should be added to an appropriate data structure
 
-    //user interactions
+    //user interactions (mainly call other functions)
     do{
 //the user can choose to modify the metadata of any file
 
