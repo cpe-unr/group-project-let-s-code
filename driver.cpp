@@ -31,8 +31,8 @@ int driver(int argc, char const *argv[]){
 
 //object holding the information should be added to an appropriate data structure
 
-
-do{
+    //user interactions
+    do{
 //the user can choose to modify the metadata of any file
 
 //The user may choose to process a file by choosing one or more processors
@@ -45,7 +45,7 @@ do{
 
 //If the user chooses to do so, a CSV file can be exported
 
-}while(); //while the user does not choose to exit
+    }while(); //while the user does not choose to exit
 
 
 //When the modification is complete, the file must be saved with the new metadata
