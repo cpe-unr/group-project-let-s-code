@@ -1,9 +1,9 @@
 #ifndef LIMITER_H
 #define LIMITER_H
 
-#include "Processor.h"
+#include "IProcessor.h"
 
-class Limiter : public Processor{
+class Limiter : public IProcessor{
 
 public: 
     //Limiter(int limit);

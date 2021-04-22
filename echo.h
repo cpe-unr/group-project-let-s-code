@@ -1,9 +1,9 @@
 #ifndef ECHO_H
 #define ECHO_H
 
-#include "Processor.h"
+#include "IProcessor.h"
 
-class Echo : public Processor{
+class Echo : public IProcessor{
     int delay;
 public:
     Echo(int samples);

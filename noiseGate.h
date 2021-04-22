@@ -1,9 +1,9 @@
 #ifndef NOISEGATE_H
 #define NOISEGATE_H
 
-#include "Processor.h"
+#include "IProcessor.h"
 
-class NoiseGate : public Processor{
+class NoiseGate : public IProcessor{
     int threshold;
 public:
     NoiseGate(int percent);
