@@ -26,6 +26,7 @@ int driver(int argc, char const *argv[]){
             std::cout << "File " << argv[i] << "could not be opened" << std::endl;
             //could throw an exception here? that way we can continue to work with the files that *could* be opened
         }
+        //read in files here --> 
     }
 
 
