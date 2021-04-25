@@ -16,12 +16,10 @@ int driver(int argc, char const *argv[]){
         std::cout << argv[0] << " filename (as many files as you want)" << std::endl;
         return 0;
     }
-
-//read in each file one at a time
-    //open file and check for opening
+    
     numOfFiles = argc-1; 
-    for(int i=1; i<numOfFiles; i++){
-        fin.open(argv[i]);
+    for(int i=1; i<numOfFiles; i++){ //read in each file one at a time
+        fin.open(argv[i]); //open file and check for opening
         if((fin.is_open()) == false){
             std::cout << "File " << argv[i] << "could not be opened" << std::endl;
             //could throw an exception here? that way we can continue to work with the files that *could* be opened

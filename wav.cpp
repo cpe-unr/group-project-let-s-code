@@ -1,9 +1,3 @@
-/*
- * This class is designed to work with PCM 8-bit mono wavefiles.
- * It makes many assumptions about the format of the wave as a result.
- * It will NOT work with stereo files or any other bit-depth than 8 bits.
- */
-
 #include <string>
 #include <fstream>
 #include <iostream>
