@@ -27,6 +27,8 @@ int driver(int argc, char const *argv[]){
         //read in files here --> 
     }
 
+//array of buffer pointers(array)
+
 
 //object holding the information should be added to an appropriate data structure
 
