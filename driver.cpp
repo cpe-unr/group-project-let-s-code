@@ -4,11 +4,14 @@
 #include <fstream>
 //#include <sstream>
 
+#include "wav.h"
+
 #define MIN_ARGS 2
 
 int driver(int argc, char const *argv[]){
     std::ifstream fin;
     int numOfFiles;
+    std::vector<Wav*> songs; //vector af wav pointers
 
     //check for correct usage / make sure there are files to be opened
     if (argc < MIN_ARGS) {
@@ -22,15 +25,13 @@ int driver(int argc, char const *argv[]){
         fin.open(argv[i]); //open file and check for opening
         if((fin.is_open()) == false){
             std::cout << "File " << argv[i] << "could not be opened" << std::endl;
-            //could throw an exception here? that way we can continue to work with the files that *could* be opened
+            return 0; //could throw an exception here? that way we can continue to work with the files that *could* be opened
         }
+        //check for bit depth
         //read in files here --> 
+        //object holding the information should be added to an appropriate data structure
     }
 
-//array of buffer pointers(array)
-
-
-//object holding the information should be added to an appropriate data structure
 
     //user interactions (mainly call other functions)
     do{
