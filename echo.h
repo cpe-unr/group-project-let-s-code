@@ -7,7 +7,7 @@ class Echo : public IProcessor{
     int delay;
 public:
     Echo(int samples);
-    void processBuffer(unsigned char* buffer, int bufferSize);
+    void processBuffer(unsigned char* buffer, int bufferSize, int bitSize, bool signEd);
     int getDelay() const;
 };
 

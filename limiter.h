@@ -7,7 +7,7 @@ class Limiter : public IProcessor{
 
 public: 
     //Limiter(int limit);
-    void processBuffer(unsigned char* buffer, int bufferSize);
+    void processBuffer(unsigned char* buffer, int bufferSize, int bitSize, bool signEd);
 };
 
 #endif

@@ -7,7 +7,7 @@
 
 class IProcessor {
 public:
-    virtual void processBuffer(unsigned char* buffer, int bufferSize) = 0;
+    virtual void processBuffer(unsigned char* buffer, int bufferSize, int bitSize, bool signEd) = 0;
 };
 
 

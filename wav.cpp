@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Wav.h"
 
+//create as template
 void Wav::readFile(const std::string &fileName) {
     std::ifstream file(fileName,std::ios::binary | std::ios::in);
     if(file.is_open()){
@@ -22,6 +23,7 @@ short *Wav::get16bitBuffer(){
     return shortBuffer;
 }
 
+//created as template
 void Wav::writeFile(const std::string &outFileName) {
     std::ofstream outFile(outFileName, std::ios::out | std::ios::binary);
     outFile.write((char*)&waveHeader,sizeof(wav_header));
