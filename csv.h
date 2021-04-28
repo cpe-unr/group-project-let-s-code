@@ -1,7 +1,7 @@
 #ifndef CSV_H
 #define CSV_H
 
-//#include ""
+#include "GroupProj_CS202 - Sheet1.csv"
 
 class CSV{
 	unsigned char* buffer = NULL;
@@ -11,6 +11,8 @@ public:
 
 	unsigned char* getBuffer();
 	int getBuffersize() const;
+
+	virtual ~CSV();
 
 };
 
