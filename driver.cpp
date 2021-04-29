@@ -2,9 +2,9 @@
 #include <vector>
 #include <string>
 #include <fstream>
-//#include <sstream>
 
 #include "wav.h"
+#include "user.h"
 
 #define MIN_ARGS 2
 
@@ -16,7 +16,7 @@ int driver(int argc, char const *argv[]){
     //check for correct usage / make sure there are files to be opened
     if (argc < MIN_ARGS) {
         std::cout << "Correct usage:" << std::endl;
-        std::cout << argv[0] << " filename (as many files as you want)" << std::endl;
+        std::cout << argv[0] << " /.filename (as many files as you want)" << std::endl;
         return 0;
     }
     
@@ -33,35 +33,33 @@ int driver(int argc, char const *argv[]){
         songs.emplace_back(wav); //object holding the information should be added to an appropriate data structure
     }
 
-
     //user interactions (mainly call other functions)
-    //check for bit depth if(wav.bit_depth == 8){}else if(wav.bitdepth == 16){}
+    User user;
+    int action;
     do{
-//the user can choose to modify the metadata of any file
+        user.title();
+        user.prompt();
 
-//The user may choose to process a file by choosing one or more processors
-    //Processors should be applied in sequence
-    //The provided processors should include normalization, noise gating, and echo
-
-//After processing, the user should be prompted for a file name and if valid, 
-    //a new file is created with the processed audio
-    //The user is not allowed to save the file under the same name as any of the existing files
-
-//If the user chooses to do so, a CSV file can be exported
-
-    }while(); //while the user does not choose to exit
-
-
-//When the modification is complete, the file must be saved with the new metadata
-//The modifications should override any current metadata, or create the metadata if it didn’t exist previously
-
-
-
-//sound file data (sound buffer, etc) should be deleted from the heap (NOT DISK!)
+        switch(action){
+            case 0: //exit application
+                return 0;
+            case 1: //list songs
+                user.getSongs(songs); 
+            case 2: //edit metadata
+                user.editMetadata(songs);
+            case 3: //4, 5
+                user.process(action);
+            case 4: 
+                user.save();
+            default:
+                std::cout << "that is not a valid action. please choose again\n" << std::endl;
+        }
+    }while(action != 0); //while the user does not choose to exit
 
     //close audio files
     for(int i=1; i<numOfFiles; i++){
         fin.close();
+        delete songs[i-1]; //sound file data (sound buffer, etc) should be deleted from the heap (NOT DISK!)
     }
     return 0;
 }
