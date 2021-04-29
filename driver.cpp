@@ -21,19 +21,21 @@ int driver(int argc, char const *argv[]){
     }
     
     numOfFiles = argc-1; 
-    for(int i=1; i<numOfFiles; i++){ //read in each file one at a time
+    for(int i=1; i<numOfFiles; i++){ //"read in" each file one at a time
         fin.open(argv[i]); //open file and check for opening
         if((fin.is_open()) == false){
             std::cout << "File " << argv[i] << "could not be opened" << std::endl;
             return 0; //could throw an exception here? that way we can continue to work with the files that *could* be opened
         }
-        //check for bit depth
-        //read in files here --> 
-        //object holding the information should be added to an appropriate data structure
+        
+        Wav *wav = new Wav(); 
+        wav->readFile(argv[i]); //read in file
+        songs.emplace_back(wav); //object holding the information should be added to an appropriate data structure
     }
 
 
     //user interactions (mainly call other functions)
+    //check for bit depth if(wav.bit_depth == 8){}else if(wav.bitdepth == 16){}
     do{
 //the user can choose to modify the metadata of any file
 

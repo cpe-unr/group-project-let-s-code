@@ -23,7 +23,7 @@ short *Wav::get16bitBuffer(){
     return shortBuffer;
 }
 
-//created as template
+//created as template ?
 void Wav::writeFile(const std::string &outFileName) {
     std::ofstream outFile(outFileName, std::ios::out | std::ios::binary);
     outFile.write((char*)&waveHeader,sizeof(wav_header));

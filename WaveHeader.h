@@ -19,6 +19,7 @@
 37-40	“data”	“data” chunk header. Marks the beginning of the data section.
 41-44	File size (data)	Size of the data section.
  */
+#include <string>
 typedef struct wav_header {
     // RIFF Header
     char riff_header[4]; // Contains "RIFF"
@@ -33,12 +34,17 @@ typedef struct wav_header {
     int sample_rate;
     int byte_rate; // Number of bytes per second. sample_rate * num_channels * Bytes Per Sample
     short sample_alignment; // num_channels * Bytes Per Sample
-    short bit_depth; // Number of bits per sample
+    short bit_depth; // Number of bits per sample // 8 or 16 (in our case)
 
     // Data
     char data_header[4]; // Contains "data"
     int data_bytes; // Number of bytes in data. Number of samples * num_channels * sample byte size
-    //if metadata, it will say INFO
+    //if metadata is present after this, it will say INFO
+    
+    char info_header[4]; //contains "info"
+    std::string title; //inam
+    std::string artist; //iart
+
     // char bytes[]; // Remainder of wave file is bytes
 } wav_header;
 #endif 
