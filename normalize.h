@@ -1,15 +1,12 @@
-#ifndef ECHO_H
-#define ECHO_H
+#ifndef NORMALIZE_H
+#define NORMALIZE_H
 
 #include "IProcessor.h"
 
-class Echo : public IProcessor{
-    int delay;
+class Normalize : public IProcessor{
 public:
-    Echo(int samples);
     void processBuffer(unsigned char* buffer, int bufferSize, int bitSize, bool signEd);
     void processBuffer(short buffer[], int bufferSize, int bitSize, bool signEd);
-    int getDelay() const;
 };
 
 #endif

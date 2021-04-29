@@ -8,6 +8,7 @@ class NoiseGate : public IProcessor{
 public:
     NoiseGate(int percent);
     void processBuffer(unsigned char* buffer, int bufferSize, int midpoint, bool signEd);
+    void processBuffer(short buffer[], int bufferSize, int midpoint, bool signEd);
     double getThreshold() const;
 };
 

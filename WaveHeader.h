@@ -38,6 +38,7 @@ typedef struct wav_header {
     // Data
     char data_header[4]; // Contains "data"
     int data_bytes; // Number of bytes in data. Number of samples * num_channels * sample byte size
+    //if metadata, it will say INFO
     // char bytes[]; // Remainder of wave file is bytes
 } wav_header;
 #endif 

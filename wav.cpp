@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Wav.h"
 
-//create as template
+//create as template ?
 void Wav::readFile(const std::string &fileName) {
     std::ifstream file(fileName,std::ios::binary | std::ios::in);
     if(file.is_open()){
