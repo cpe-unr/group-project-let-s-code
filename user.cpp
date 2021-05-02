@@ -4,16 +4,19 @@
 
 #include "user.h"
 #include "wav.h"
+#include "csv.h"
 
 void User::title(){ //prints out list of user actions (w/ #ed responses)
 
 } 
 
 std::string User::prompt(){ //prompts user and reads in response
+    std::string response;
 
+    return response;
 } 
 
-void User::getSongs(std::vector<Wav*> songs){ //prints out list of user songs
+void User::getSongs(std::vector<Wav*> songs){ //prints out list of user songs (#ed list)
 
 } 
 

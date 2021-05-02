@@ -1,7 +1,7 @@
 final: driver.cpp wav.o Iprocessor.o noiseGate.o normalize.o echo.o user.o
 	g++ -std=c++11 driver.cpp wav.o Iprocessor.o noiseGate.o normalize.o echo.o user.o -o final
 
-#audio processors
+#audio and audio processors
 wav.o: wav.cpp wav.h
 	g++ -c -std=c++11 wav.cpp
 
@@ -17,6 +17,7 @@ normalize.o: normalize.h normalize.cpp
 echo.o: echo.h echo.cpp
 	g++ -c -std=c++11 echo.cpp
 
+#user
 user.o: user.h user.cpp
 	g++ -c -std=c++11 user.cpp
 

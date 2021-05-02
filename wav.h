@@ -3,7 +3,7 @@
 
 #include "WaveHeader.h"
 
-class Wav {
+class Wav : public wav_header{
 	unsigned char* buffer = NULL; //make a template
     wav_header waveHeader;
 public:

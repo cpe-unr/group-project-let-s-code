@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "wav.h"
 
 class User{
 public:
