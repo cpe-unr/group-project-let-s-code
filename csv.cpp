@@ -16,6 +16,11 @@ CSV::CSV(std::string data){
 }
 */
 
+
+//Paige: there's a method for this in wav. If you need the buffer, you can just send 
+//stuff in from the vector of songs (or the vector itself) and call either 
+//wav.get8bitBuffer() or wav.get16bitBuffer() depending on the bit depth of the song 
+//(also found under wave_header line 37)
 unsigned char *Wav::getBuffer(){
 	return buffer;
 }
