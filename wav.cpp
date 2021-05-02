@@ -24,6 +24,8 @@ void Wav::readFile(const std::string &fileName){
         while(!stream.eof()){ 
             stream >> temp;
             if(temp.find(".") == std::string::npos){
+            //might be able to search file w/ if(temp.find("INAM")){read in the same way}
+            //might be able to search file w/ temp.find("inam")
                 if(temp == "INAM" || temp == "inam"){
                     stream >> temp;
                     wav_header::title = temp;

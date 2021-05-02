@@ -48,6 +48,8 @@ int driver(int argc, char const *argv[]){
             case 2: //edit metadata
                 user.editMetadata(songs);
             case 3:
+                //need extra method calls to get the song to pass in
+                //give it the songs vector index (songs[i])
                 user.process(3, song);
             case 4:
                 user.process(4, song);

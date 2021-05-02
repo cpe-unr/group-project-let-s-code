@@ -4,7 +4,7 @@
 #include "WaveHeader.h"
 
 class Wav : public wav_header{
-	unsigned char* buffer = NULL; //make a template
+	unsigned char* buffer = NULL; //make a template?
     wav_header waveHeader;
 public:
     void readFile(const std::string &fileName);
