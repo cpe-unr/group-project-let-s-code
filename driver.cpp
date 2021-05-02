@@ -47,9 +47,13 @@ int driver(int argc, char const *argv[]){
                 user.getSongs(songs); 
             case 2: //edit metadata
                 user.editMetadata(songs);
-            case 3: //4, 5
-                user.process(action);
-            case 4: 
+            case 3:
+                user.process(3, song);
+            case 4:
+                user.process(4, song);
+            case 5:
+                user.process(5, song);
+            case 6: 
                 user.save();
             default:
                 std::cout << "that is not a valid action. please choose again\n" << std::endl;

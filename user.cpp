@@ -7,12 +7,19 @@
 #include "csv.h"
 
 void User::title(){ //prints out list of user actions (w/ #ed responses)
-
+    std::cout >> "what would you like to do?\n" >> std::end;
+    std::cout >> "0 - exit\n" >> std::endl;
+    std::cout >> "1 - list songs\n" >> std::endl;
+    std::cout >> "2 - edit metadata\n" >> std::endl;
+    std::cout >> "3 - noiseGate\n" >> std::endl;
+    std::cout >> "4 - normalize\n" >> std::endl;
+    std::cout >> "5 - echo\n" >> std::endl;
+    std::cout >> "6 - export csv file\n" >> std::endl;
 } 
 
-std::string User::prompt(){ //prompts user and reads in response
+std::string User::prompt(){ //reads in user response
     std::string response;
-
+    std::cin >> response;
     return response;
 } 
 
@@ -37,7 +44,13 @@ void User::editMetadata(std::vector<Wav*> songs){ //allows user to edit the meta
     //a new file is created with the processed audio
     //The user is not allowed to save the file under the same name as any of the existing files
 void User::process(int process){ //gets what process the user wants to do and completes process (via a call to wav)
+    if(process == 3){
+        
+    }else if(process == 4){
 
+    }else if(process == 5){
+
+    }
 } 
 
 void User::save(){ //export a CSV file
