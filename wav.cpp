@@ -22,15 +22,21 @@ void Wav::readFile(const std::string &fileName){
         std::string temp;
         std::istringstream stream(fileName);
         while(!stream.eof()){ 
-            stream >> temp;
+            stream >> temp; //reads in the large data chunk ?
             if(temp.find(".") == std::string::npos){
-            //might be able to search file w/ if(temp.find("INAM")){read in the same way}
-            //might be able to search file w/ temp.find("inam")
-                if(temp == "INAM" || temp == "inam"){
+                if(temp.find("INAM")){
+                    stream >> temp; //pick up where the reading stopped / read in the next thing ?
+                    wav_header::title = temp;
+                }
+                if(temp.find("inam")){
                     stream >> temp;
                     wav_header::title = temp;
                 }
-                if(temp == "IART" || temp == "iart"){
+                if(temp.find("IART")){
+                    stream >> temp;
+                    wav_header::artist = temp;
+                }
+                if(temp.find("iart")){
                     stream >> temp;
                     wav_header::artist = temp;
                 }

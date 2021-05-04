@@ -50,11 +50,11 @@ int driver(int argc, char const *argv[]){
             case 3:
                 //need extra method calls to get the song to pass in
                 //give it the songs vector index (songs[i])
-                user.process(3, song);
+                user.process(3, songs[i]);
             case 4:
-                user.process(4, song);
+                user.process(4, songs[i]);
             case 5:
-                user.process(5, song);
+                user.process(5, songs[i]);
             case 6: 
                 user.save();
             default:
