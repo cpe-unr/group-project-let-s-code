@@ -38,6 +38,10 @@ void User::getSongs(std::vector<Wav*> songs){ //prints out list of user songs (#
 //When the modification is complete, the file must be saved with the new metadata
 //The modifications should override any current metadata, or create the metadata if it didn’t exist previously
 void User::editMetadata(std::vector<Wav*> songs){ //allows user to edit the metadata of song
+	file.open(ios::app | ios::out);
+	file << endl << songs;
+	file << songName;
+	file.close();
 //no printing or prompting from here
 } 
 

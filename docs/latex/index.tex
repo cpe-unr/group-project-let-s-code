@@ -1,0 +1,46 @@
+N\+O\+T\+ES $\ast$create L\+O\+TS of functions
+
+U\+ML\+: name, attributes, function names w/ return type
+
+Assignments\+: All
+\begin{DoxyItemize}
+\item driver (add sudo code and put in you own calls with M\+A\+NY comments)
+\item makefile, update when you create your classes
+\end{DoxyItemize}
+
+Paige
+\begin{DoxyItemize}
+\item W\+AV files (read in)
+\item audio processors
+\item U\+ML diagram
+\end{DoxyItemize}
+
+Annie
+\begin{DoxyItemize}
+\item \hyperlink{classCSV}{C\+SV} file (generation)
+\item if the user choses to change the metadata
+\end{DoxyItemize}
+
+Tanner
+\begin{DoxyItemize}
+\item user interactions \subsection*{-\/ documentation w/ doxygen (paige will give U\+ML diagram) }
+\end{DoxyItemize}
+
+Ideas\+:
+\begin{DoxyItemize}
+\item class for the wav files (reading in and such)
+\item class that creates the \hyperlink{classCSV}{C\+SV} file
+\end{DoxyItemize}
+
+idk ideas\+:
+\begin{DoxyItemize}
+\item interface for printable\+: prints out all the commands that should promp the user? 
+
+ sudo code/project breakdown\+: read in each file one at a time extract all the technical information (sample rate, etc.) and metadata object holding the information should be added to an appropriate data structure sound file data (sound buffer, etc) should be deleted from the heap (N\+OT D\+I\+S\+K!)
+
+When all the files are read and processed, the user can choose to modify the metadata of any file When the modification is complete, the file must be saved with the new metadata The modifications should override any current metadata, or create the metadata if it didn’t exist previously
+
+The user may choose to process a file by choosing one or more processors. Processors should be applied in sequence. The provided processors should include normalization, noise gating, and echo After processing, the user should be prompted for a file name and if valid, a new file is created with the processed audio The user is not allowed to save the file under the same name as any of the existing files
+
+If the user chooses to do so, a \hyperlink{classCSV}{C\+SV} file can be exported listing all the files, their technical information (sample rates, etc.), and the file metadata. If no metadata exists, the phrase “\+No metadata present” should be included in the description for that file 
+\end{DoxyItemize}

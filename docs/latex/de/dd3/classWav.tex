@@ -1,0 +1,84 @@
+\hypertarget{classWav}{}\section{Wav Class Reference}
+\label{classWav}\index{Wav@{Wav}}
+
+
+Inheritance diagram for Wav\+:
+% FIG 0
+
+
+Collaboration diagram for Wav\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWav_a1c4230cec49d30147a5b8a1950083f7c}{read\+File} (const std\+::string \&file\+Name)
+\item 
+void \hyperlink{classWav_ad86f4a21d36719ae375ea2586f9f591f}{write\+File} (const std\+::string \&out\+File\+Name)
+\item 
+unsigned char $\ast$ \hyperlink{classWav_a998e6927c64d21c466c0ed552a889757}{get8bit\+Buffer} ()
+\item 
+short $\ast$ \hyperlink{classWav_a1ec518bcccf38dbd25dd71b3a2b6dfd9}{get16bit\+Buffer} ()
+\item 
+int \hyperlink{classWav_a71fdfa1d9f5e7c1b86f07bbff4249dca}{get\+Buffer\+Size} () const
+\item 
+$\ast$virtual \hyperlink{classWav_a1510b246ba121b103a60b8e7839af25f}{$\sim$\+Wav} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWav_a1510b246ba121b103a60b8e7839af25f}\label{classWav_a1510b246ba121b103a60b8e7839af25f}} 
+\index{Wav@{Wav}!````~Wav@{$\sim$\+Wav}}
+\index{````~Wav@{$\sim$\+Wav}!Wav@{Wav}}
+\subsubsection{\texorpdfstring{$\sim$\+Wav()}{~Wav()}}
+{\footnotesize\ttfamily Wav\+::$\sim$\+Wav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+/$\ast$$\ast$ checks to see if the buffer is not null, if it is it deletes the buffer 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWav_a1ec518bcccf38dbd25dd71b3a2b6dfd9}\label{classWav_a1ec518bcccf38dbd25dd71b3a2b6dfd9}} 
+\index{Wav@{Wav}!get16bit\+Buffer@{get16bit\+Buffer}}
+\index{get16bit\+Buffer@{get16bit\+Buffer}!Wav@{Wav}}
+\subsubsection{\texorpdfstring{get16bit\+Buffer()}{get16bitBuffer()}}
+{\footnotesize\ttfamily short $\ast$ Wav\+::get16bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the 16 bit buffer, stores it as a short pointer \mbox{\Hypertarget{classWav_a998e6927c64d21c466c0ed552a889757}\label{classWav_a998e6927c64d21c466c0ed552a889757}} 
+\index{Wav@{Wav}!get8bit\+Buffer@{get8bit\+Buffer}}
+\index{get8bit\+Buffer@{get8bit\+Buffer}!Wav@{Wav}}
+\subsubsection{\texorpdfstring{get8bit\+Buffer()}{get8bitBuffer()}}
+{\footnotesize\ttfamily unsigned char $\ast$ Wav\+::get8bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the 8 bit buffer,stores it as an unsigned charactor pointer \mbox{\Hypertarget{classWav_a71fdfa1d9f5e7c1b86f07bbff4249dca}\label{classWav_a71fdfa1d9f5e7c1b86f07bbff4249dca}} 
+\index{Wav@{Wav}!get\+Buffer\+Size@{get\+Buffer\+Size}}
+\index{get\+Buffer\+Size@{get\+Buffer\+Size}!Wav@{Wav}}
+\subsubsection{\texorpdfstring{get\+Buffer\+Size()}{getBufferSize()}}
+{\footnotesize\ttfamily int Wav\+::get\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+gets the the size of the buffer \mbox{\Hypertarget{classWav_a1c4230cec49d30147a5b8a1950083f7c}\label{classWav_a1c4230cec49d30147a5b8a1950083f7c}} 
+\index{Wav@{Wav}!read\+File@{read\+File}}
+\index{read\+File@{read\+File}!Wav@{Wav}}
+\subsubsection{\texorpdfstring{read\+File()}{readFile()}}
+{\footnotesize\ttfamily void Wav\+::read\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+Checks if file is open and if it is it reads it in, then closes file 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ stores the file name as a string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWav_ad86f4a21d36719ae375ea2586f9f591f}\label{classWav_ad86f4a21d36719ae375ea2586f9f591f}} 
+\index{Wav@{Wav}!write\+File@{write\+File}}
+\index{write\+File@{write\+File}!Wav@{Wav}}
+\subsubsection{\texorpdfstring{write\+File()}{writeFile()}}
+{\footnotesize\ttfamily void Wav\+::write\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{out\+File\+Name }\end{DoxyParamCaption})}
+
+Checks to see if the file opened, and then records the data in the file 
+\begin{DoxyParams}{Parameters}
+{\em out\+File\+Name} & -\/ stored as string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+wav.\+h\item 
+wav.\+cpp\end{DoxyCompactItemize}

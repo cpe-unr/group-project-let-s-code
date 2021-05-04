@@ -1,0 +1,82 @@
+\hypertarget{classCSV}{}\section{C\+SV Class Reference}
+\label{classCSV}\index{C\+SV@{C\+SV}}
+
+
+Inheritance diagram for C\+SV\+:
+% FIG 0
+
+
+Collaboration diagram for C\+SV\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCSV_a44ee4f814e511f8aa198e35ce6eb2e09}\label{classCSV_a44ee4f814e511f8aa198e35ce6eb2e09}} 
+{\bfseries C\+SV} (std\+::string title, std\+::string artist)
+\item 
+void \hyperlink{classCSV_a6ae6a15b746db041bfed94f79927430e}{write\+File} (const std\+::string \&out\+File\+Name)
+\item 
+std\+::string \hyperlink{classCSV_a2bc6c4fbdf6e9f29a7318eb4a1cb7a9c}{get\+Title} () const
+\item 
+std\+::string \hyperlink{classCSV_a2daa595c3dfd529c6739a52c3bf973f9}{get\+Artist} () const
+\item 
+void \hyperlink{classCSV_a6912fd71f2a18c26d42f4100aeafcd75}{set\+Data} () const
+\item 
+virtual \hyperlink{classCSV_ae1b0cfd98d62cf81004462320848c665}{$\sim$\+C\+SV} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCSV_a928bd2dab5c6de3ba46478c814cc6b25}\label{classCSV_a928bd2dab5c6de3ba46478c814cc6b25}} 
+\hyperlink{classWav}{Wav} {\bfseries title}
+\item 
+\mbox{\Hypertarget{classCSV_aa6a171bad2fc3f76d5685ff77b12264e}\label{classCSV_aa6a171bad2fc3f76d5685ff77b12264e}} 
+\hyperlink{classWav}{Wav} {\bfseries artist}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCSV_ae1b0cfd98d62cf81004462320848c665}\label{classCSV_ae1b0cfd98d62cf81004462320848c665}} 
+\index{C\+SV@{C\+SV}!````~C\+SV@{$\sim$\+C\+SV}}
+\index{````~C\+SV@{$\sim$\+C\+SV}!C\+SV@{C\+SV}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+S\+V()}{~CSV()}}
+{\footnotesize\ttfamily C\+S\+V\+::$\sim$\+C\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+checks to see if the buffer is not null, if it is it deletes the buffer 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCSV_a2daa595c3dfd529c6739a52c3bf973f9}\label{classCSV_a2daa595c3dfd529c6739a52c3bf973f9}} 
+\index{C\+SV@{C\+SV}!get\+Artist@{get\+Artist}}
+\index{get\+Artist@{get\+Artist}!C\+SV@{C\+SV}}
+\subsubsection{\texorpdfstring{get\+Artist()}{getArtist()}}
+{\footnotesize\ttfamily std\+::string C\+S\+V\+::get\+Artist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets song artist as a string \mbox{\Hypertarget{classCSV_a2bc6c4fbdf6e9f29a7318eb4a1cb7a9c}\label{classCSV_a2bc6c4fbdf6e9f29a7318eb4a1cb7a9c}} 
+\index{C\+SV@{C\+SV}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!C\+SV@{C\+SV}}
+\subsubsection{\texorpdfstring{get\+Title()}{getTitle()}}
+{\footnotesize\ttfamily std\+::string C\+S\+V\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets song title as a string \mbox{\Hypertarget{classCSV_a6912fd71f2a18c26d42f4100aeafcd75}\label{classCSV_a6912fd71f2a18c26d42f4100aeafcd75}} 
+\index{C\+SV@{C\+SV}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!C\+SV@{C\+SV}}
+\subsubsection{\texorpdfstring{set\+Data()}{setData()}}
+{\footnotesize\ttfamily void C\+S\+V\+::set\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the data \mbox{\Hypertarget{classCSV_a6ae6a15b746db041bfed94f79927430e}\label{classCSV_a6ae6a15b746db041bfed94f79927430e}} 
+\index{C\+SV@{C\+SV}!write\+File@{write\+File}}
+\index{write\+File@{write\+File}!C\+SV@{C\+SV}}
+\subsubsection{\texorpdfstring{write\+File()}{writeFile()}}
+{\footnotesize\ttfamily void C\+S\+V\+::write\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{out\+File\+Name }\end{DoxyParamCaption})}
+
+Checks to see if the file opened, and then records the data in the file 
+\begin{DoxyParams}{Parameters}
+{\em out\+File\+Name} & -\/ stored as string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+csv.\+h\item 
+csv.\+cpp\end{DoxyCompactItemize}

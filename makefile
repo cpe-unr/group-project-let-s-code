@@ -1,5 +1,5 @@
-final: driver.cpp wav.o Iprocessor.o noiseGate.o normalize.o echo.o user.o
-	g++ -std=c++11 driver.cpp wav.o Iprocessor.o noiseGate.o normalize.o echo.o user.o -o final
+final: driver.cpp myLib.a
+	g++ -std=c++11 driver.cpp -o final
 
 #audio and audio processors
 wav.o: wav.cpp wav.h
@@ -24,3 +24,6 @@ user.o: user.h user.cpp
 #other
 clean:
 	rm *.o final
+
+myLib.a: wav.o Iprocessor.o noiseGate.o normalize.o echo.o user.o
+	ar suvr myLib.a wav.o Iprocessor.o noiseGate.o normalize.o echo.o user.o

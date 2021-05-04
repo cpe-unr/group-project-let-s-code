@@ -1,0 +1,92 @@
+\hypertarget{classNoiseGate}{}\section{Noise\+Gate Class Reference}
+\label{classNoiseGate}\index{Noise\+Gate@{Noise\+Gate}}
+
+
+Inheritance diagram for Noise\+Gate\+:
+% FIG 0
+
+
+Collaboration diagram for Noise\+Gate\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNoiseGate_aab6e967dfc31e653b5bf82c699bcf93a}{Noise\+Gate} (int percent)
+\item 
+void \hyperlink{classNoiseGate_a72b27202c8a15f40991ffc9a60b6847f}{process\+Buffer} (unsigned char $\ast$buffer, int buffer\+Size, int midpoint, bool sign\+Ed)
+\item 
+void \hyperlink{classNoiseGate_a1db849961ccf2799a7df690942cb7faf}{process\+Buffer} (short buffer\mbox{[}$\,$\mbox{]}, int buffer\+Size, int midpoint, bool sign\+Ed)
+\item 
+double \hyperlink{classNoiseGate_acf298330b350ca82d78f8d737468455b}{get\+Threshold} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNoiseGate_aab6e967dfc31e653b5bf82c699bcf93a}\label{classNoiseGate_aab6e967dfc31e653b5bf82c699bcf93a}} 
+\index{Noise\+Gate@{Noise\+Gate}!Noise\+Gate@{Noise\+Gate}}
+\index{Noise\+Gate@{Noise\+Gate}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{Noise\+Gate()}{NoiseGate()}}
+{\footnotesize\ttfamily Noise\+Gate\+::\+Noise\+Gate (\begin{DoxyParamCaption}\item[{int}]{percent }\end{DoxyParamCaption})}
+
+Sets the threshold equal to the percentage 
+\begin{DoxyParams}{Parameters}
+{\em percent} & -\/ percentage as an integer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNoiseGate_acf298330b350ca82d78f8d737468455b}\label{classNoiseGate_acf298330b350ca82d78f8d737468455b}} 
+\index{Noise\+Gate@{Noise\+Gate}!get\+Threshold@{get\+Threshold}}
+\index{get\+Threshold@{get\+Threshold}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{get\+Threshold()}{getThreshold()}}
+{\footnotesize\ttfamily double Noise\+Gate\+::get\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the threshold and returns it \mbox{\Hypertarget{classNoiseGate_a72b27202c8a15f40991ffc9a60b6847f}\label{classNoiseGate_a72b27202c8a15f40991ffc9a60b6847f}} 
+\index{Noise\+Gate@{Noise\+Gate}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Noise\+Gate\+::process\+Buffer (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size,  }\item[{int}]{midpoint,  }\item[{bool}]{sign\+Ed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Processes the buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ buffer as unsigned character pointer \\
+\hline
+{\em buffer\+Size} & -\/ size of the buffer, in integers \\
+\hline
+{\em bit\+Size} & -\/ 8 bits, stored as integers \\
+\hline
+{\em sign\+Ed} & -\/ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIProcessor_a23636a36e24e5ef43a0619dccb1f34de}{I\+Processor}.
+
+\mbox{\Hypertarget{classNoiseGate_a1db849961ccf2799a7df690942cb7faf}\label{classNoiseGate_a1db849961ccf2799a7df690942cb7faf}} 
+\index{Noise\+Gate@{Noise\+Gate}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Noise\+Gate\+::process\+Buffer (\begin{DoxyParamCaption}\item[{short}]{buffer\mbox{[}$\,$\mbox{]},  }\item[{int}]{buffer\+Size,  }\item[{int}]{midpoint,  }\item[{bool}]{sign\+Ed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Processes the buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ buffer stored as a short array \\
+\hline
+{\em buffer\+Size} & -\/ size of the buffer, in integers \\
+\hline
+{\em bit\+Size} & -\/ 16 bits, stored as integers \\
+\hline
+{\em sign\+Ed} & -\/ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIProcessor_a0c0aa3cfc892e0ece4d16def623eec54}{I\+Processor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+noise\+Gate.\+h\item 
+noise\+Gate.\+cpp\end{DoxyCompactItemize}
