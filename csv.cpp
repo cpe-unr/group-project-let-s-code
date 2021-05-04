@@ -27,6 +27,7 @@ unsigned char *Wav::getBuffer(){
 */
 //I guess im not gonna include the getBuffer since its already in Wav
 
+/*
 void CSV::writeFile(const std::string &outFileName){
 	//do I need line below?
 	std::ofstream outFile(outFileName, std::ios::out | std::ios::binary);
@@ -40,6 +41,7 @@ void CSV::writeFile(const std::string &outFileName){
 	//outFile.write();
 	//outFile.close();
 }
+*/
 
 //is this better than the one above?
 void CSV::writeFile(const std::string &outFileName){
