@@ -9,8 +9,8 @@ class CSV : public Wav{
 	std::string title;
 	std::string artist;
 public:
-	Wav.title;
-	Wav.artist;
+	//Wav.title;
+	//Wav.artist;
 	
 	CSV(std::string title, std::string artist);
 
