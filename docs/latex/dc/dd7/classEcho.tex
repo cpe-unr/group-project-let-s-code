@@ -1,0 +1,92 @@
+\hypertarget{classEcho}{}\section{Echo Class Reference}
+\label{classEcho}\index{Echo@{Echo}}
+
+
+Inheritance diagram for Echo\+:
+% FIG 0
+
+
+Collaboration diagram for Echo\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEcho_a35237dbafd1906efd27da3140de9f8f6}{Echo} (int samples)
+\item 
+void \hyperlink{classEcho_a74133ca41ed2cc1ff2fe3da3265742c4}{process\+Buffer} (unsigned char $\ast$buffer, int buffer\+Size, int bit\+Size, bool sign\+Ed)
+\item 
+void \hyperlink{classEcho_a8c737405020bdb4b7c07f08034971844}{process\+Buffer} (short buffer\mbox{[}$\,$\mbox{]}, int buffer\+Size, int bit\+Size, bool sign\+Ed)
+\item 
+int \hyperlink{classEcho_aaf73eea3703793b47edb3a34991183c6}{get\+Delay} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEcho_a35237dbafd1906efd27da3140de9f8f6}\label{classEcho_a35237dbafd1906efd27da3140de9f8f6}} 
+\index{Echo@{Echo}!Echo@{Echo}}
+\index{Echo@{Echo}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{Echo()}{Echo()}}
+{\footnotesize\ttfamily Echo\+::\+Echo (\begin{DoxyParamCaption}\item[{int}]{samples }\end{DoxyParamCaption})}
+
+Sets the sample as a delay 
+\begin{DoxyParams}{Parameters}
+{\em samples} & -\/ stores samples as integers \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEcho_aaf73eea3703793b47edb3a34991183c6}\label{classEcho_aaf73eea3703793b47edb3a34991183c6}} 
+\index{Echo@{Echo}!get\+Delay@{get\+Delay}}
+\index{get\+Delay@{get\+Delay}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{get\+Delay()}{getDelay()}}
+{\footnotesize\ttfamily int Echo\+::get\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the delay \mbox{\Hypertarget{classEcho_a74133ca41ed2cc1ff2fe3da3265742c4}\label{classEcho_a74133ca41ed2cc1ff2fe3da3265742c4}} 
+\index{Echo@{Echo}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size,  }\item[{int}]{bit\+Size,  }\item[{bool}]{sign\+Ed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Processes the buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ buffer as unsigned character pointer \\
+\hline
+{\em buffer\+Size} & -\/ size of the buffer, in integers \\
+\hline
+{\em bitsize} & -\/ How many bits are in the song (8 or 16), as integers \\
+\hline
+{\em sign\+Ed} & -\/ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIProcessor_a23636a36e24e5ef43a0619dccb1f34de}{I\+Processor}.
+
+\mbox{\Hypertarget{classEcho_a8c737405020bdb4b7c07f08034971844}\label{classEcho_a8c737405020bdb4b7c07f08034971844}} 
+\index{Echo@{Echo}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer (\begin{DoxyParamCaption}\item[{short}]{buffer\mbox{[}$\,$\mbox{]},  }\item[{int}]{buffer\+Size,  }\item[{int}]{bit\+Size,  }\item[{bool}]{sign\+Ed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Processes the buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ buffer as unsigned character pointer \\
+\hline
+{\em buffer\+Size} & -\/ size of the buffer, in integers \\
+\hline
+{\em bitsize} & -\/ How many bits are in the song (8 or 16), as integers \\
+\hline
+{\em sign\+Ed} & -\/ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIProcessor_a0c0aa3cfc892e0ece4d16def623eec54}{I\+Processor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+echo.\+h\item 
+echo.\+cpp\end{DoxyCompactItemize}

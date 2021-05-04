@@ -1,0 +1,63 @@
+\hypertarget{classIProcessor}{}\section{I\+Processor Class Reference}
+\label{classIProcessor}\index{I\+Processor@{I\+Processor}}
+
+
+Inheritance diagram for I\+Processor\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classIProcessor_a23636a36e24e5ef43a0619dccb1f34de}{process\+Buffer} (unsigned char $\ast$buffer, int buffer\+Size, int bit\+Size, bool sign\+Ed)=0
+\item 
+virtual void \hyperlink{classIProcessor_a0c0aa3cfc892e0ece4d16def623eec54}{process\+Buffer} (short buffer\mbox{[}$\,$\mbox{]}, int buffer\+Size, int bit\+Size, bool sign\+Ed)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIProcessor_a23636a36e24e5ef43a0619dccb1f34de}\label{classIProcessor_a23636a36e24e5ef43a0619dccb1f34de}} 
+\index{I\+Processor@{I\+Processor}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!I\+Processor@{I\+Processor}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void I\+Processor\+::process\+Buffer (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size,  }\item[{int}]{bit\+Size,  }\item[{bool}]{sign\+Ed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Processes the buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ buffer as unsigned character pointer \\
+\hline
+{\em buffer\+Size} & -\/ size of the buffer, in integers \\
+\hline
+{\em bit\+Size} & -\/ 8 bits, stored as integers \\
+\hline
+{\em sign\+Ed} & -\/ \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classEcho_a74133ca41ed2cc1ff2fe3da3265742c4}{Echo}, \hyperlink{classNoiseGate_a72b27202c8a15f40991ffc9a60b6847f}{Noise\+Gate}, and \hyperlink{classNormalize_a152ce27eb875d21589af0c75f3b468b8}{Normalize}.
+
+\mbox{\Hypertarget{classIProcessor_a0c0aa3cfc892e0ece4d16def623eec54}\label{classIProcessor_a0c0aa3cfc892e0ece4d16def623eec54}} 
+\index{I\+Processor@{I\+Processor}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!I\+Processor@{I\+Processor}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void I\+Processor\+::process\+Buffer (\begin{DoxyParamCaption}\item[{short}]{buffer\mbox{[}$\,$\mbox{]},  }\item[{int}]{buffer\+Size,  }\item[{int}]{bit\+Size,  }\item[{bool}]{sign\+Ed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Processes the buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ buffer stored as a short array \\
+\hline
+{\em buffer\+Size} & -\/ size of the buffer, in integers \\
+\hline
+{\em bit\+Size} & -\/ 16 bits, stored as integers \\
+\hline
+{\em sign\+Ed} & -\/ \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classEcho_a8c737405020bdb4b7c07f08034971844}{Echo}, \hyperlink{classNoiseGate_a1db849961ccf2799a7df690942cb7faf}{Noise\+Gate}, and \hyperlink{classNormalize_aaefd72311dfdefdf84969a69deecffa1}{Normalize}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+Processor.\+h\end{DoxyCompactItemize}

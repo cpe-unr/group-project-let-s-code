@@ -1,0 +1,79 @@
+\hypertarget{classUser}{}\section{User Class Reference}
+\label{classUser}\index{User@{User}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classUser_a3ecab8308e249fe964a75e58eea339dc}{title} ()
+\item 
+int \hyperlink{classUser_a5e387ee476d9c8388de1c2750e05b64a}{prompt} ()
+\item 
+void \hyperlink{classUser_a74010d98a04429b4d2d235c6c2092a2f}{get\+Songs} (std\+::vector$<$ \hyperlink{classWav}{Wav} $\ast$$>$ songs)
+\item 
+void \hyperlink{classUser_a2834ebb7c08f3766a51b14c76d7e1fef}{edit\+Metadata} (std\+::vector$<$ \hyperlink{classWav}{Wav} $\ast$$>$ songs)
+\item 
+void \hyperlink{classUser_a26fa7b4d62ab16626b37a25b24cf8310}{process} (int process, \hyperlink{classWav}{Wav} $\ast$song\+Name)
+\item 
+void \hyperlink{classUser_a1e6652772cc099e9cb2c76b54c1ce9da}{save} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUser_a2834ebb7c08f3766a51b14c76d7e1fef}\label{classUser_a2834ebb7c08f3766a51b14c76d7e1fef}} 
+\index{User@{User}!edit\+Metadata@{edit\+Metadata}}
+\index{edit\+Metadata@{edit\+Metadata}!User@{User}}
+\subsubsection{\texorpdfstring{edit\+Metadata()}{editMetadata()}}
+{\footnotesize\ttfamily void User\+::edit\+Metadata (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classWav}{Wav} $\ast$$>$}]{songs }\end{DoxyParamCaption})}
+
+Allows user to edit the meta data of the song 
+\begin{DoxyParams}{Parameters}
+{\em songs} & -\/ stores the songs as a vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUser_a74010d98a04429b4d2d235c6c2092a2f}\label{classUser_a74010d98a04429b4d2d235c6c2092a2f}} 
+\index{User@{User}!get\+Songs@{get\+Songs}}
+\index{get\+Songs@{get\+Songs}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Songs()}{getSongs()}}
+{\footnotesize\ttfamily void User\+::get\+Songs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classWav}{Wav} $\ast$$>$}]{songs }\end{DoxyParamCaption})}
+
+Prints out a list of the users, using a for loop 
+\begin{DoxyParams}{Parameters}
+{\em songs} & -\/ stores the songs as a vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUser_a26fa7b4d62ab16626b37a25b24cf8310}\label{classUser_a26fa7b4d62ab16626b37a25b24cf8310}} 
+\index{User@{User}!process@{process}}
+\index{process@{process}!User@{User}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void User\+::process (\begin{DoxyParamCaption}\item[{int}]{process,  }\item[{\hyperlink{classWav}{Wav} $\ast$}]{song\+Name }\end{DoxyParamCaption})}
+
+Gets what process the user wants to do and completes it by calling to wav 
+\begin{DoxyParams}{Parameters}
+{\em process} & -\/ stores process as integers \\
+\hline
+{\em song\+Name} & -\/ uses wav pointer to complete process \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUser_a5e387ee476d9c8388de1c2750e05b64a}\label{classUser_a5e387ee476d9c8388de1c2750e05b64a}} 
+\index{User@{User}!prompt@{prompt}}
+\index{prompt@{prompt}!User@{User}}
+\subsubsection{\texorpdfstring{prompt()}{prompt()}}
+{\footnotesize\ttfamily int User\+::prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads in the users response \mbox{\Hypertarget{classUser_a1e6652772cc099e9cb2c76b54c1ce9da}\label{classUser_a1e6652772cc099e9cb2c76b54c1ce9da}} 
+\index{User@{User}!save@{save}}
+\index{save@{save}!User@{User}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void User\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Exports \hyperlink{classCSV}{C\+SV} file \mbox{\Hypertarget{classUser_a3ecab8308e249fe964a75e58eea339dc}\label{classUser_a3ecab8308e249fe964a75e58eea339dc}} 
+\index{User@{User}!title@{title}}
+\index{title@{title}!User@{User}}
+\subsubsection{\texorpdfstring{title()}{title()}}
+{\footnotesize\ttfamily void User\+::title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints out the list of the users possible actions 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+user.\+h\item 
+user.\+cpp\end{DoxyCompactItemize}
